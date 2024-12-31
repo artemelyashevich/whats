@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: whats-clone
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/whats-clone
+    password: admin
+    username: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  liquibase:
+    change-log: classpath:db/changelog/master.yaml
+server:
+  port: 8080
